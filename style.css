@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    z-index: 9999;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(1, 78, 75, 0.60); 
+    z-index: 100;
+}
+
+h1{
+    text-align: center;
+}
+
+.container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    margin:0 2rem;
+}
+
+.form-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: .1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tile{
+    color: whitesmoke;
+    font-style: italic;
+    font: .8em sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+input{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom:1px  solid aqua;
+    padding-left: 2rem;
+    padding-bottom: 2px;
+    font-size: 15px;
+}
+
+.input-group{
+    padding:1% 0;
+    position: relative;
+}
+
+.input-group i{
+    position: absolute;
+    bottom: 1.8rem;
+    left: 5px;
+    color: whitesmoke;
+}
+
+.eye b{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    color: whitesmoke;
+}
+
+.eye{
+    cursor: pointer;
+}
+
+.eye b:hover {
+    color: aqua
+}
+
+input:focus{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom:2px solid  aqua;
+}
+
+input::placeholder{
+    color: transparent;
+}
+
+label{
+    color: whitesmoke;
+    font-size: .9rem;
+    position: relative;
+    left: 1.8rem;
+    top: -1.6rem;
+    cursor: auto;
+    transition:0.3s ease all;
+}
+
+input:focus~label,input:not(:placeholder-shown)~label{
+    top:-4em;
+    color: aqua;
+    font-size: 10px;
+}
+
+.recover{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 1rem ;
+}
+
+.recover a{
+    text-decoration: none;
+    color: aqua;
+}
+
+.recover a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.btn{
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-radius: 60px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: rgba(0,0,1,0.9);
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background: aqua;
+    border: 2px solid rgba(0,0,1,0.9);
+    color: rgba(0,0,1,0.9);
+}
+
+.or{
+    font-size: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.icons{
+    text-align: center;
+}
+
+.icons i{
+    color: whitesmoke;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    margin: 0 15px;
+    transition: .5s;
+}
+
+.icons i:hover{
+    background: aqua;
+    color: rgba(0,0,0,0.7);
+    font-size: 1.6rem;
+    border: 2px solid;
+    font-weight: lighter;
+}
+
+.term{
+    color: whitesmoke;
+    margin-top: 20px;
+    font-size: x-small;
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    padding:0 4rem;
+    margin-top: 1rem;
+}
+
+button{
+    color: aqua;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 200px; 
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000;
+    }
+    25% {
+        box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
+    }
+    50% {
+        box-shadow: 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 15px #0000ff, 0 0 20px #0000ff;
+    }
+    75% {
+        box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+    }
+    100% {
+        box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000;
+    }
+}
+
+.header {
+    animation: glow 5s infinite;
+    height: auto;
+    border-radius: 0px;
+}
+
+.footer {
+    color: whitesmoke;
+    font-size: 10px;
+    text-align: center;
+    padding: 1rem;
+    line-height: 20px;
+}
+
+#preloader {
+    background: black url(Loader.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
